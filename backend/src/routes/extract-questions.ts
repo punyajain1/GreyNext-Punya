@@ -1,5 +1,6 @@
 import { Router, Request, Response } from 'express';
 const router = Router();
+// TODO(intern): wrap each route handler body in try/catch for consistent error responses
 
 /**
  * POST /api/extract-questions
