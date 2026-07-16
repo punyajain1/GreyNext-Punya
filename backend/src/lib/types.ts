@@ -54,6 +54,7 @@ export interface CriterionResult {
   met: boolean;
 }
 
+/** Represents the grading result for a single matched question-answer pair. */
 export interface Grade {
   questionId: string;
   criteriaResults: CriterionResult[];
@@ -63,6 +64,7 @@ export interface Grade {
   feedback: string;
 }
 
+/** Holds the reconciliation output — mapped pairs, unmatched questions and orphan answer blocks. */
 export interface ReconcileResult {
   mapped: MatchedItem[];
   unanswered: Question[];             // questions with no matched answer block
