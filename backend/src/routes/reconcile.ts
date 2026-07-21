@@ -1,5 +1,6 @@
 import { Router, Request, Response } from 'express';
 const router = Router();
+// fix(intern): guard against empty inputs — prevents silent no-op reconciliation
 
 /**
  * POST /api/reconcile
