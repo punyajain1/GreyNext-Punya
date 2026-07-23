@@ -6,6 +6,11 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 // Middleware
+// Request logger (added by intern for debug visibility)
+app.use((req, _res, next) => {
+  console.log(`[${new Date().toISOString()}] ${req.method} ${req.path}`);
+  next();
+});
 app.use(cors({
   origin: process.env.FRONTEND_URL || 'http://localhost:3000',
   credentials: true,
