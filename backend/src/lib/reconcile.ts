@@ -1,3 +1,4 @@
+// null-safe: detectedLabel may be null when model returns no label text
 /**
  * Pure deterministic function for matching questions to answers
  */
