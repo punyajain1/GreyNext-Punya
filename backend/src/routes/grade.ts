@@ -324,7 +324,7 @@ You MUST return a pure JSON object matching this schema:
 
       const maxMarks = Number(raw.maxMarks ?? raw.max_marks ?? raw.totalMarks ?? rubric.totalMarks ?? 2);
       let rawScore = typeof raw.score === 'number' ? raw.score : Number(raw.score);
-      let finalScore = 0;
+      let finalScore = 0; // clamped to [0, maxMarks] — NaN guard added
 
       if (!isNaN(rawScore) && rawScore >= 0) {
         finalScore = Math.min(maxMarks, Math.max(0, rawScore));
