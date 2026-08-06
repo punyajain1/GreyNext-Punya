@@ -137,3 +137,5 @@ export interface GradeResponse {
   grades: Grade[];
   overallFeedback: string;
 }
+
+// TODO(intern): extract resolveQuestionId helper into a shared util module (lib/gradeUtils.ts)
