@@ -1,3 +1,4 @@
+// fix(intern): added aria-label to loading spinner for screen reader accessibility
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
