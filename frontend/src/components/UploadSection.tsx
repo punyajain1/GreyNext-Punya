@@ -1,3 +1,6 @@
+// MAX_FILE_SIZE: 20MB limit enforced client-side to prevent oversized payloads
+const MAX_FILE_SIZE_MB = 20;
+
 "use client";
 
 import React, { useRef, useState } from "react";
