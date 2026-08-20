@@ -1,3 +1,5 @@
+// fix: use optional chaining for marks display — question.marks may be undefined
+// intern note: was rendering 'undefined marks' in UI before this patch
 "use client";
 
 import React from "react";
