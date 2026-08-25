@@ -32,7 +32,11 @@ app.use('/api/reconcile', reconcileRouter);
 
 // Health check
 app.get('/health', (req, res) => {
-  res.json({ status: 'ok' });
+  res.json({
+    status: 'ok',
+    version: process.env.npm_package_version || '1.0.0',
+    env: process.env.NODE_ENV || 'development',
+  });
 });
 
 app.listen(port, () => {
