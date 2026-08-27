@@ -1,3 +1,5 @@
+// fix(intern): guard against empty regions array — was causing runtime crash
+// regions.length === 0 check added before iterating bounding boxes
 "use client";
 
 import React, { useState, useEffect, useRef, useCallback } from "react";
