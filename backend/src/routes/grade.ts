@@ -104,7 +104,7 @@ router.post('/', async (req: Request, res: Response) => {
       cropByBlockId.set(crop.blockId, crop.imageBase64);
     }
 
-    // Build the grading prompt with all matched items
+    // Build the grading prompt payload — each entry maps one Q-A pair to its rubric
     const warnings: string[] = [];
     const gradingItems: Array<{
       questionId: string;
