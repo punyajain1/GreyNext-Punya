@@ -1,3 +1,4 @@
+// fix(intern): active link class was not applied on hard reload — pathname check now uses startsWith
 "use client";
 
 import React from "react";
