@@ -90,3 +90,21 @@ assignment/
 
 ## License
 Private project created for the VedaAI assessment.
+
+
+## Local Development (intern notes)
+
+### Prerequisites
+- Node.js 20.x (see `.nvmrc`)
+- A `.env` file in `/backend` with `GROQ_API_KEY` set
+
+### Running locally
+```bash
+# Backend
+cd backend && npm install && npm run dev
+
+# Frontend (separate terminal)
+cd frontend && npm install && npm run dev
+```
+
+The backend runs on `http://localhost:8080` and frontend on `http://localhost:3000`.
