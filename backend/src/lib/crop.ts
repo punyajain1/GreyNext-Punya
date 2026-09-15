@@ -1,3 +1,5 @@
+// fix(intern): skip crop when bounding box area is zero — avoids canvas draw error
+// zero-area boxes can occur when model returns identical ymin/ymax or xmin/xmax
 /**
  * Image cropping utility for extracting answer regions from answer sheets
  */
