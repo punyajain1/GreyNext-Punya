@@ -1,3 +1,4 @@
+// fix(intern): numPages is 1-indexed; loop must use <= not < to include last page
 /**
  * Client-side PDF and Image utilities for rendering and cropping pages
  */
