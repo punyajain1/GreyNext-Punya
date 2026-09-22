@@ -1,3 +1,4 @@
+// feat(intern): confidence badge added — displays high/medium/low match confidence per question
 "use client";
 
 import React, { useState } from "react";
