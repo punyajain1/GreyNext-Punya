@@ -1,3 +1,4 @@
+// fix(intern): tabIndex and onKeyDown handler added to mapped item rows for keyboard nav
 "use client";
 
 import React, { useState, useEffect } from "react";
