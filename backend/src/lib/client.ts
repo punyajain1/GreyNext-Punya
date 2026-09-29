@@ -1,3 +1,4 @@
+// chore: removed stray console.log debug statements from dev session
 /**
  * Gemini AI client configuration and utilities
  */
